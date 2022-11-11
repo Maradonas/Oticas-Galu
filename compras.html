@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Contatos</title>
+</head>
+<body>
+    
+</body>
+</html>
+<header>
+    <div class="logo_caixa">
+        <h1>
+            <img src="oticas.jpeg" title="Pizzaria Seu Pizza" class="logo"></img>
+        </h1>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span>Home</span><div class="liquid"></div></a></li>
+                <li><a href="oculos.html"><span>OPÇÕES</span><div class="liquid"></div></a></li>
+                <li><a href="contato.html"><span>CONTATO</span><div class="liquid"></div></a></li>
+                <li><a href="compras.html"><span>COMPRAS</span><div class="liquid"></div></a></li>
+            </ul>
+        </nav>
+    
+</header>
+
+<div class="TituloContato"><h1>Faça o seu pedido </h1> </div>
+<form name="frmContato" method="get"  action="mailto:teste@mail.com"-target="_blank">
+    <fieldset>
+        
+        <legend>Dados Pessoais</legend>
+        <label for="nomesobrenome">* Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" name="" class="input-padrao" required placeholder="Seu nome">
+
+        <label for="email">* E-mail</label>
+        <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="email">* CVV</label>
+        <input type="number" id="email" name="" class="input-padrao" required placeholder="*XXX">
+
+        <label for="email">* Numero do cartão</label>
+        <input type="number" id="email" name="" class="input-padrao" required placeholder="*XXXX XXXX XXXX XXXX">
+
+        <label for="email">* CEP</label>
+        <input type="number" id="email" name="" class="input-padrao" required placeholder="*XXXXX-XXX">
+
+        <label for="email">Telefone</label>
+        <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+        
+        <label for="contato">Qual produto você gostaria?
+            <input type="radio" value="radio-mail" name="Compras"> Oculos
+            <input type="radio" value="radio-telefone" name="Compras"> Lentes
+            <input type="radio" value="radio-whatsapp" name="Compras"> Armação
+        </label>
+
+        <br>
+        <label for="horario">Escolha a quantidade
+            
+            <select>
+                <option required> </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </label>
+        
+       
+    </fieldset>
+    <input type="submit" value="Concluir Pedido" class="enviar" onclick="JavaScript:alert('O seu pedido foi concluido com sucesso');">
+
+
+    
+</form>
+<footer>
+    <alt="Óticas Galu!>
+        <p class="copyright">&copy; Copyright Óticas Galu - 2022</p>
+</footer>

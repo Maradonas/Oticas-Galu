@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #57a1be;
+    border-radius: 10px;
+}
+
+body {
+    background-image: url(oculosdemais.png);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    font-family: "Tahoma", "Arial";
+
+}
+
+
+header {
+
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+a {
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+a span {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+
+a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+a .liquid::after,
+a .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #57a1be;
+}
+
+a .liquid::before {
+
+    border-radius: 45%;
+    background: #57a1be;
+    animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+a:hover .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.logo_caixa {
+    width: 940px;
+    position: relative;
+    margin-left: 120px;
+    color: black;
+    width: 9000;
+
+
+}
+
+ul {
+    margin-left: 0;
+}
+
+.opcoes {
+    margin-top: px;
+}
+
+.banner {
+    width: 100%
+}
+
+.logo {
+    width: 30%;
+    border-radius: 50px;
+    
+    margin-top: 100px;
+}
+
+.titulo-principal {
+
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    margin: 0 0 1em;
+    clear: center;
+    background-color: white;
+    width: 700px;
+    margin-left: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+
+
+}
+
+.principal {
+    width: auto;
+    margin: auto;
+    text-align: center;
+
+    margin-top: 150px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+
+    text-align: center;
+
+
+
+}
+
+.principal strong {
+    font-weight: bold;
+
+}
+
+.principal em {
+
+    font-style: italic;
+}
+
+.oculos {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20 px 0;
+}
+
+.textoMain {
+    text-align: left;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    padding-left: 50px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+
+.map {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mapa-coneudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.map p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficio {
+    padding: 7 em 0;
+    background: rgba(248, 182, 0, 0, 582);
+}
+
+.conteudo-beneficio {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.lista-beneficio {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: large;
+    margin: 0 0 1em;
+    clear: center;
+
+
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img-beneficios {
+    width: 80%;
+    opacity: 0.8;
+    transition: 200ms;
+    box-shadow: 10px 10px 5px 2px black;
+}
+
+.img.beneficios:hover {
+    opacity: 0.8;
+}
+
+.itens {
+    line-height: 1.7;
+}
+
+.itens:before {
+    content: "*";
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.video {
+    width: 600px;
+    margin: 3em auto;
+}
+
+nav a:hover {
+    color: rgba(248, 182, 0, 0.582);
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to top, #89bed3, #88d9e9);
+    padding: 25px 0;
+
+}
+
+.banner {
+    width: 100%;
+}
+
+.copyright {
+    color: black;
+    font-size: 25px;
+    margin: 5px 0 0;
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blocos {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5%;
+    margin-bottom: 70px;
+}
+
+.bloco1:hover {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #486d7c;
+    border-radius: 20px;
+    color: #88d9e9;
+    font-size: large;
+    font-style: italic;
+    border-style: solid;
+    border-color: white;
+}
+
+.bloco2:hover {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #486d7c;
+    border-radius: 20px;
+    color: #88d9e9;
+    font-size: large;
+    font-style: italic;
+    border-style: solid;
+    border-color: white;
+}
+
+.bloco3:hover {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #486d7c;
+    border-radius: 20px;
+    color: #88d9e9;
+    font-size: large;
+    font-style: italic;
+    border-style: solid;
+    border-color: white;
+}
+
+.escuros:hover {
+    width: 13.5cm;
+    height: 13.5cm;
+    border-color: white;
+    border-style: solid;
+
+}
+
+
+
+
+
+
+
+
+.bloco1 {
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 15cm;
+    height: 16cm;
+    background-color: #486d7c;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    border-style: solid;
+    border-color: white;
+}
+
+.bloco2 {
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 15cm;
+    height: 16cm;
+    background-color: #486d7c;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    border-style: solid;
+    border-color: white;
+}
+
+.bloco3 {
+    padding-bottom: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 15cm;
+    height: 16cm;
+    background-color: #486d7c;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    border-style: solid;
+    border-color: white;
+}
+
+.escuros {
+    border-radius: 20px;
+    text-align: center;
+    width: 13cm;
+    height: 13cm;
+}
+
+
+
+
+
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn {
+    margin-top: 10px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+
+    margin-top: 60px;
+
+    display: block;
+    margin-left: 580px;
+    margin-right: auto;
+}
+
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-right: auto
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+
+
+
+form {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    margin-left: 25%;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 30px;
+
+}
+
+.TituloContato {
+
+
+    font-family: "Alfa Slab One", cursive;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: rgb(36, 197, 255);
+    gap: 5%;
+    text-shadow: rgba(0, 128, 153, 0.75) 0px 0px 0px, rgba(0, 128, 153, 0.71) 0px 5px 0px, rgba(0, 128, 153, 0.68) 0px 10px 0px, rgba(0, 128, 153, 0.64) 0px 15px 0px, rgba(0, 128, 153, 0.61) 0px 20px 0px, rgba(0, 128, 153, 0.57) 0px 25px 0px, rgba(0, 128, 153, 0.54) 0px 30px 0px, rgba(0, 128, 153, 0.5) 0px 35px 0px;
+
+}
+
+.contato_texto {
+
+    text-align: center;
+
+    padding: 0 0 20% 0;
+
+}
+
+.contato-título {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: red;
+
+}
+
+.input-padrao {
+    width: 50%;
+    margin-bottom: 10px;
+    height: 35px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 25%;
+}
+
+.nomesobrenome {
+
+    text-align: center;
+}
+
+input {
+
+    align-items: center;
+}
+input:hover{
+    border-color: #57a1be;
+}
+input:empty{
+    border-color: #57a1be;
+}
+form {
+
+    margin-bottom: 30px;
+}
+
+form label,
+form legend {
+    text-align: center;
+    display: block;
+
+    font-size: 20px;
+
+    margin: 0 0 10px;
+
+}
+
+fieldset {
+
+    width: 75%;
+
+    padding-left: 20px;
+
+    margin: 0 0 10px;
+
+}
+
+.chk {
+
+    margin: 20px 0;
+
+}
+
+.enviar {
+
+    width: 40%;
+
+    padding: 15px 0;
+
+    background: lightcoral;
+
+    color: white;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 5px;
+
+    transition: 1s all;
+
+    cursor: pointer;
+
+}
+
+.enviar:hover {
+
+    background: darkgoldenrod;
+
+    transform: scale(1.2);
+
+}
+
+.whatsapp-link {
+    padding-left: 35%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    color: Green;
+}
+
+.whatsapp-link:active {
+    color: red;
+}
+
+
+
+.input-padrao ::placeholder {
+    color:#cbd0d5;
+    }
+   
+
+
+ 
+   
